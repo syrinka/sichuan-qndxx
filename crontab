@@ -1,0 +1,3 @@
+SHELL=bash
+BASH_ENV=/etc/cron.env
+0 12 * * 1 echo "$(/bin/date && /usr/bin/env python3 /app/main.py)" &>> /var/log/dxx.log
